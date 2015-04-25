@@ -42,6 +42,9 @@ class GGCompassNavView: UIView {
         let centerX = compassCenterImage.frame.origin.x;
         let centerY = compassCenterImage.frame.origin.y;
         
+        let currentX = Double(compassPointerImage.frame.origin.x);
+        let currentY = Double(compassPointerImage.frame.origin.y);
+        
         newX = cos(newDirection * TO_RAD) * radius + Double(centerX);
         newY = sin(newDirection * TO_RAD) * radius + Double(centerY);
         
@@ -52,7 +55,10 @@ class GGCompassNavView: UIView {
         
         UIView.animateWithDuration(0.5, animations: {
 //            pointer.frame = CGRectMake(CGFloat(newX), CGFloat(newY), CGFloat(width), CGFloat(height));
-            pointer.transform = CGAffineTransformMakeRotation(CGFloat(newDirection) * CGFloat(TO_RAD));
+            var transform : CGAffineTransform = pointer.transform;
+            CGAffineTransformTranslate(transform, CGFloat(newX - currentX), CGFloat(newY - currentY));
+            CGAffineTransformRotate(transform, (CGFloat(newDirection) * CGFloat(TO_RAD)));
+            pointer.transform = transform;
             
             return ();
         });
