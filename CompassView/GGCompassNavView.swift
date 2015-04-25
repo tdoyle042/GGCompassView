@@ -13,6 +13,8 @@ import CoreLocation
 class GGCompassNavView: UIView {
     @IBOutlet weak var destinationLabel: UILabel!
     @IBOutlet weak var distnaceToGo: UILabel!
+    @IBOutlet weak var compassCenterImage: UIImageView!
+    @IBOutlet weak var compassPointerImage: UIImageView!
     
     var destinationName : String = "No Where!" {
         didSet {
@@ -27,11 +29,37 @@ class GGCompassNavView: UIView {
     }
     
     func updateDirectionToDestination(newDirection : CLLocationDirection) {
+        let radius = 70.0;
+        let TO_RAD = M_PI/180;
         
+        var newX : Double;
+        var newY : Double;
+        var newRotation : Double = newDirection;
+        
+        let width = Double(compassPointerImage.frame.width);
+        let height = Double(compassPointerImage.frame.height);
+        
+        let centerX = compassCenterImage.frame.origin.x;
+        let centerY = compassCenterImage.frame.origin.y;
+        
+        newX = cos(newDirection * TO_RAD) * radius + Double(centerX);
+        newY = sin(newDirection * TO_RAD) * radius + Double(centerY);
+        
+        var theta = atan2(compassPointerImage.transform.b, compassPointerImage.transform.a);
+        var dTheta = newDirection - Double(theta);
+        
+        var pointer : UIImageView = compassPointerImage;
+        
+        UIView.animateWithDuration(0.5, animations: {
+//            pointer.frame = CGRectMake(CGFloat(newX), CGFloat(newY), CGFloat(width), CGFloat(height));
+            pointer.transform = CGAffineTransformMakeRotation(CGFloat(newDirection) * CGFloat(TO_RAD));
+            
+            return ();
+        });
     }
     
     func updateDistanceToDestination(newDistance : CLLocationDistance) {
-        distnaceToGo.text? = "\(newDistance)ft";
+        distnaceToGo.text? = String(format: "%0.0f ft", newDistance);
     }
     
     func updateUsersDirection(newDirection : CLLocationDirection) {

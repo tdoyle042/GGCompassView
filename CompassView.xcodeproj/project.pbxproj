@@ -10,6 +10,8 @@
 		AB1A211A1AEBF1EC001ACED5 /* GGCompassNavView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB1A21191AEBF1EC001ACED5 /* GGCompassNavView.xib */; };
 		AB1A211C1AEBF22A001ACED5 /* GGCompass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1A211B1AEBF22A001ACED5 /* GGCompass.swift */; };
 		AB1A211E1AEBFCAA001ACED5 /* GGCompassNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1A211D1AEBFCAA001ACED5 /* GGCompassNavView.swift */; };
+		AB1A21211AEC1F64001ACED5 /* Center.png in Resources */ = {isa = PBXBuildFile; fileRef = AB1A211F1AEC1F64001ACED5 /* Center.png */; };
+		AB1A21221AEC1F64001ACED5 /* Pointer.png in Resources */ = {isa = PBXBuildFile; fileRef = AB1A21201AEC1F64001ACED5 /* Pointer.png */; };
 		AB71FC801AEB268C007DBF52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB71FC7F1AEB268C007DBF52 /* AppDelegate.swift */; };
 		AB71FC821AEB268C007DBF52 /* GGCompassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB71FC811AEB268C007DBF52 /* GGCompassViewController.swift */; };
 		AB71FC851AEB268C007DBF52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB71FC831AEB268C007DBF52 /* Main.storyboard */; };
@@ -33,6 +35,8 @@
 		AB1A21191AEBF1EC001ACED5 /* GGCompassNavView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GGCompassNavView.xib; sourceTree = "<group>"; };
 		AB1A211B1AEBF22A001ACED5 /* GGCompass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGCompass.swift; sourceTree = "<group>"; };
 		AB1A211D1AEBFCAA001ACED5 /* GGCompassNavView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGCompassNavView.swift; sourceTree = "<group>"; };
+		AB1A211F1AEC1F64001ACED5 /* Center.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Center.png; sourceTree = "<group>"; };
+		AB1A21201AEC1F64001ACED5 /* Pointer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pointer.png; sourceTree = "<group>"; };
 		AB71FC7A1AEB268C007DBF52 /* CompassView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompassView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB71FC7E1AEB268C007DBF52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB71FC7F1AEB268C007DBF52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +91,8 @@
 		AB71FC7C1AEB268C007DBF52 /* CompassView */ = {
 			isa = PBXGroup;
 			children = (
+				AB1A211F1AEC1F64001ACED5 /* Center.png */,
+				AB1A21201AEC1F64001ACED5 /* Pointer.png */,
 				AB71FC7F1AEB268C007DBF52 /* AppDelegate.swift */,
 				AB1A211B1AEBF22A001ACED5 /* GGCompass.swift */,
 				AB71FC811AEB268C007DBF52 /* GGCompassViewController.swift */,
@@ -207,8 +213,10 @@
 			files = (
 				AB71FC851AEB268C007DBF52 /* Main.storyboard in Resources */,
 				AB1A211A1AEBF1EC001ACED5 /* GGCompassNavView.xib in Resources */,
+				AB1A21211AEC1F64001ACED5 /* Center.png in Resources */,
 				AB71FC8A1AEB268C007DBF52 /* LaunchScreen.xib in Resources */,
 				AB71FC871AEB268C007DBF52 /* Images.xcassets in Resources */,
+				AB1A21221AEC1F64001ACED5 /* Pointer.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

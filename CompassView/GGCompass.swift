@@ -55,24 +55,27 @@ class GGCompass : NSObject {
         var dLambda = (long2 - long1) * TO_RAD;
 
         var a = pow(sin(dPhi/2), 2.0) + cos(phi1) * cos(phi2) *
-            pow(cos(dLambda), 2.0);
+            pow(sin(dLambda/2), 2.0);
         var c = 2 * atan2(sqrt(a), sqrt(1-a));
 
         return R * c;
     }
     
     func headingFromPointToPoint(from : CLLocationCoordinate2D, to : CLLocationCoordinate2D) -> CLLocationDirection {
-        // Set up constants in mathemtical form
-        let phi1 = from.latitude;
-        let phi2 = to.latitude;
+        let TO_RAD = M_PI / 180;
+        let TO_DEG = 180 / M_PI;
         
-        let lambda1 = from.longitude;
-        let lambda2 = to.longitude;
+        // Set up constants in mathemtical form
+        let phi1 = from.latitude * TO_RAD;
+        let phi2 = to.latitude * TO_RAD;
+        
+        let lambda1 = from.longitude * TO_RAD;
+        let lambda2 = to.longitude * TO_RAD;
     
         let y = sin(lambda2 - lambda1) * cos(phi2);
         let x = cos(phi1)*sin(phi2) - sin(phi1)*cos(phi2)*cos(lambda2 - lambda1);
         
-        return atan2(y, x);
+        return atan2(y, x) * TO_DEG;
     }
     
 }
