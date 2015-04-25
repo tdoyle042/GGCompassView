@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB1A211A1AEBF1EC001ACED5 /* GGCompassNavView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB1A21191AEBF1EC001ACED5 /* GGCompassNavView.xib */; };
+		AB1A211C1AEBF22A001ACED5 /* GGCompass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1A211B1AEBF22A001ACED5 /* GGCompass.swift */; };
+		AB1A211E1AEBFCAA001ACED5 /* GGCompassNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1A211D1AEBFCAA001ACED5 /* GGCompassNavView.swift */; };
 		AB71FC801AEB268C007DBF52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB71FC7F1AEB268C007DBF52 /* AppDelegate.swift */; };
-		AB71FC821AEB268C007DBF52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB71FC811AEB268C007DBF52 /* ViewController.swift */; };
+		AB71FC821AEB268C007DBF52 /* GGCompassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB71FC811AEB268C007DBF52 /* GGCompassViewController.swift */; };
 		AB71FC851AEB268C007DBF52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB71FC831AEB268C007DBF52 /* Main.storyboard */; };
 		AB71FC871AEB268C007DBF52 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB71FC861AEB268C007DBF52 /* Images.xcassets */; };
 		AB71FC8A1AEB268C007DBF52 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB71FC881AEB268C007DBF52 /* LaunchScreen.xib */; };
 		AB71FC961AEB268C007DBF52 /* CompassViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB71FC951AEB268C007DBF52 /* CompassViewTests.swift */; };
+		AB71FCA01AEB26B1007DBF52 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB71FC9F1AEB26B1007DBF52 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +30,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB1A21191AEBF1EC001ACED5 /* GGCompassNavView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GGCompassNavView.xib; sourceTree = "<group>"; };
+		AB1A211B1AEBF22A001ACED5 /* GGCompass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGCompass.swift; sourceTree = "<group>"; };
+		AB1A211D1AEBFCAA001ACED5 /* GGCompassNavView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGCompassNavView.swift; sourceTree = "<group>"; };
 		AB71FC7A1AEB268C007DBF52 /* CompassView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompassView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB71FC7E1AEB268C007DBF52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB71FC7F1AEB268C007DBF52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AB71FC811AEB268C007DBF52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AB71FC811AEB268C007DBF52 /* GGCompassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGCompassViewController.swift; sourceTree = "<group>"; };
 		AB71FC841AEB268C007DBF52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB71FC861AEB268C007DBF52 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AB71FC891AEB268C007DBF52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		AB71FC8F1AEB268C007DBF52 /* CompassViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CompassViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB71FC941AEB268C007DBF52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB71FC951AEB268C007DBF52 /* CompassViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassViewTests.swift; sourceTree = "<group>"; };
+		AB71FC9F1AEB26B1007DBF52 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB71FCA01AEB26B1007DBF52 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +68,7 @@
 		AB71FC711AEB268C007DBF52 = {
 			isa = PBXGroup;
 			children = (
+				AB71FC9F1AEB26B1007DBF52 /* CoreLocation.framework */,
 				AB71FC7C1AEB268C007DBF52 /* CompassView */,
 				AB71FC921AEB268C007DBF52 /* CompassViewTests */,
 				AB71FC7B1AEB268C007DBF52 /* Products */,
@@ -78,7 +88,10 @@
 			isa = PBXGroup;
 			children = (
 				AB71FC7F1AEB268C007DBF52 /* AppDelegate.swift */,
-				AB71FC811AEB268C007DBF52 /* ViewController.swift */,
+				AB1A211B1AEBF22A001ACED5 /* GGCompass.swift */,
+				AB71FC811AEB268C007DBF52 /* GGCompassViewController.swift */,
+				AB1A211D1AEBFCAA001ACED5 /* GGCompassNavView.swift */,
+				AB1A21191AEBF1EC001ACED5 /* GGCompassNavView.xib */,
 				AB71FC831AEB268C007DBF52 /* Main.storyboard */,
 				AB71FC861AEB268C007DBF52 /* Images.xcassets */,
 				AB71FC881AEB268C007DBF52 /* LaunchScreen.xib */,
@@ -193,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB71FC851AEB268C007DBF52 /* Main.storyboard in Resources */,
+				AB1A211A1AEBF1EC001ACED5 /* GGCompassNavView.xib in Resources */,
 				AB71FC8A1AEB268C007DBF52 /* LaunchScreen.xib in Resources */,
 				AB71FC871AEB268C007DBF52 /* Images.xcassets in Resources */,
 			);
@@ -212,8 +226,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB71FC821AEB268C007DBF52 /* ViewController.swift in Sources */,
+				AB71FC821AEB268C007DBF52 /* GGCompassViewController.swift in Sources */,
+				AB1A211E1AEBFCAA001ACED5 /* GGCompassNavView.swift in Sources */,
 				AB71FC801AEB268C007DBF52 /* AppDelegate.swift in Sources */,
+				AB1A211C1AEBF22A001ACED5 /* GGCompass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +425,7 @@
 				AB71FC9B1AEB268C007DBF52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AB71FC9C1AEB268C007DBF52 /* Build configuration list for PBXNativeTarget "CompassViewTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +434,7 @@
 				AB71FC9E1AEB268C007DBF52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
